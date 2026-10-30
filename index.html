@@ -1,0 +1,79 @@
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンプルなHTMLページ</title>
+    <!-- Tailwind CSSを読み込む -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* カスタムフォントを適用 */
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+
+    <!-- ヘッダー -->
+    <header class="bg-indigo-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wider">My Website</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-indigo-200 transition-colors">ホーム</a></li>
+                    <li><a href="#" class="hover:text-indigo-200 transition-colors">サービス</a></li>
+                    <li><a href="#" class="hover:text-indigo-200 transition-colors">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <!-- flex-growを指定することで、画面の高さが足りない場合でもフッターを最下部に押し下げます -->
+    <main class="flex-grow container mx-auto px-4 py-12">
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+            <h2 class="text-3xl font-semibold mb-6 text-gray-900">ようこそ！</h2>
+            <p class="mb-4 leading-relaxed text-gray-600">
+                これは基本的な構造を持つシンプルなHTMLページの例です。ヘッダー、メインコンテンツ、そしてフッターが配置されています。
+            </p>
+            <p class="mb-8 leading-relaxed text-gray-600">
+                スタイリングにはTailwind CSSを使用しており、レスポンシブデザインに対応しています。スマートフォンから見ても、PCから見ても綺麗に表示されます。
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- カード1 -->
+                <div class="bg-indigo-50 p-6 rounded-lg border border-indigo-100">
+                    <h3 class="text-xl font-medium mb-2 text-indigo-900">機能 1</h3>
+                    <p class="text-sm text-indigo-700">直感的なレイアウトとクリーンなデザインで、情報を分かりやすく伝えます。</p>
+                </div>
+                <!-- カード2 -->
+                <div class="bg-indigo-50 p-6 rounded-lg border border-indigo-100">
+                    <h3 class="text-xl font-medium mb-2 text-indigo-900">機能 2</h3>
+                    <p class="text-sm text-indigo-700">モダンなCSSフレームワークを活用し、開発のスピードと品質を両立します。</p>
+                </div>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-6 rounded-full transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    詳細を見る
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">&copy; 2026 My Website. All rights reserved.</p>
+            <p class="text-sm">
+                <a href="#" class="hover:text-white transition-colors">プライバシーポリシー</a> | 
+                <a href="#" class="hover:text-white transition-colors">利用規約</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
